@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;   
+}
+/* body{
+    background-color: rgb(24, 25, 36);
+} */
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar{
+    background: rgb(24, 24, 26);
+    position: fixed;
+    padding: 10px 0;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 999;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span{
+    color:crimson;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
+.menu-btn{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    display: flex;
+    background: url("images/bg-1.png") no-repeat center;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.text-1{
+    font-size: 27px;
+}
+
+.text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.highlight{
+    color: crimson;
+    font-weight: 500;
+}
+
+.home-content a{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.home-content a:hover{
+    color: crimson;
+    background: none;
+}
+
+section{
+    padding: 20px 0;
+}
+
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+
+.title{
+    position: relative;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about .title::after{
+    content: "Who I am";
+    position: absolute;
+    background: white;
+    font-size: 20px;
+    color: crimson;
+    bottom: -13px;
+    left: 50%;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+.about .max-width{
+    /* height: 400px;
+    width: 400px; */
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 50px;
+    margin: 20px 50px;
+}
+
+.columnRight img{
+    width: 100%;
+    padding: 30px;
+}
+
+.columnLeft{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 30px;
+}
+
+.columnLeft h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+.columnLeft h3{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.columnLeft p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: dimgray;
+}
+
+.project .title::after{
+    content: "Done by Me";
+    position: absolute;
+    background: white;
+    font-size: 20px;
+    color: crimson;
+    bottom: -13px;
+    left: 50%;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+.project .max-width{
+    /* height: 400px;
+    width: 400px; */
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 50px;
+    margin: 20px 50px;
+}
+
+.project .max-width{
+    /* height: 400px;
+    width: 400px; */
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 50px;
+    margin: 20px 50px;
+}
+
+.shadow-box{
+    box-shadow: 5px 5px 30px gray;
+    border-radius: 20px;
+}
+
+.experience{
+    padding: 3%;
+    margin: 3%;
+}
+
+.experience p{
+    text-align: justify;
+    margin: 5%;
+}
+
+.project img{
+    width: 100%;
+    padding: 2%;
+}
+
+.contact .title::after{
+    content: "With Me";
+    position: absolute;
+    background: white;
+    font-size: 20px;
+    color: crimson;
+    bottom: -13px;
+    left: 50%;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+.contact ul{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    padding: 0 30%;
+}
+
+.contact li a{
+    color: dimgrey;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 5px;
+    transition: 0.3s ease;
+}
+
+.contact li a:hover{
+    color: crimson;
+}
